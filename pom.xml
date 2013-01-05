@@ -1,0 +1,86 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.psychobit</groupId>
+    <artifactId>CampFire2</artifactId>
+    <version>3.0</version>
+    <packaging>jar</packaging>
+
+    <name>CampFire2</name>
+    <url>https://github.com/EntityReborn/CampFire2</url>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+    
+    <developers>
+        <developer>
+            <id>entityreborn</id>
+            <name>Jason Unger</name>
+            <email>gmail: entityreborn</email>
+            <url>https://github.com/EntityReborn/</url>
+            <roles>
+                <role>project manager</role>
+                <role>developer</role>
+                <role>tester</role>
+            </roles>
+            <timezone>-8</timezone>
+        </developer>
+        
+        <developer>
+            <id>psychobit</id>
+            <name>Psychobit</name>
+            <url>http://dev.bukkit.org/profiles/Psychobit/</url>
+            <roles>
+                <role>original author</role>
+            </roles>
+        </developer>
+    </developers>
+    
+    <repositories>
+        <repository>
+            <id>sk89q-mvn2</id>
+            <url>http://mvn2.sk89q.com/repo</url>
+        </repository>
+        
+        <repository>
+            <id>bukkit-repo</id>
+            <url>http://repo.bukkit.org/content/groups/public/</url>
+        </repository>
+        
+        <repository>
+            <id>bukkit-maven</id>
+            <url>http://repo.bukkit.org/content/repositories/releases/</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.sk89q</groupId>
+            <artifactId>worldedit</artifactId>
+            <version>5.4.5</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.spout</groupId>
+                    <artifactId>spoutapi</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        
+        <dependency>
+            <groupId>org.bukkit</groupId>
+            <artifactId>bukkit</artifactId>
+            <version>1.4.6-R0.4-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sk89q</groupId>
+            <artifactId>worldguard</artifactId>
+            <version>5.6.3</version>
+        </dependency>
+    </dependencies>
+</project>
